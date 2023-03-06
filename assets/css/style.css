@@ -1,0 +1,39 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/background.svg);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+body > * {
+    flex: 1 1 auto;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ .container > main {
+     flex: 1 1 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+#site-footer {
+    height: 2rem;
+}
+
