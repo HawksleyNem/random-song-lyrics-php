@@ -42,9 +42,9 @@
  */
 
     function getLyricsList($string) {
-        $stringList = [];
-        $stringList = explode("\n", $string);
-        return $stringList;
+        $array = [];
+        $array = explode("\n", $string);
+        return $array;
     }
 
 /**
@@ -54,9 +54,11 @@
  */
  
     function getRandLyric($array) {
-        $rand = array_rand($array);
-        $sentence = $array[$rand];
-        return $sentence;
+        $rand = array_rand($array, 1);
+        // $string = $array[rand(0, count($array)-1)];
+        // $string = $array[$rand];
+        $string = $array[array_rand($array, 1)];
+        return $string;
     }
 ?>
 
